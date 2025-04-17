@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dan1kcode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dangrek&family=Liter&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+            font-family: "Liter", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        #myVideo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        
+        .avatar {
+            background-position: center;
+            margin: 10px auto; /* Центрируем по горизонтали */
+            width: 100px;
+            height: 100px;
+            background-image: url(https://i.pinimg.com/736x/a6/da/fc/a6dafcc004fa037ca7e983d9697ea544.jpg);
+            background-size: cover;
+            border-radius: 50%;
+            transition: transform 0.5s ease;
+            cursor: pointer;
+        }
+        
+        .avatar:hover {
+            transform: scale(1.1);
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            min-height: 400px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            position: relative;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            backdrop-filter: blur(5px);
+            z-index: 1;
+        }
+        
+        .nickname {
+            font-size: 28px;
+            font-weight: 500;
+            margin-bottom: 6px;
+        }
+        
+        .Bio {
+            padding: 0 15px;
+        }
+        .contacts {
+            margin-top: 10px;
+            gap:10px;
+        }
+        .tg_icon {
+        width: 36px;
+        height: 36px;
+        transition: transform 0.5s ease; 
+        margin: 0 5px; 
+    }
+    .tg_icon:hover {
+    transform: scale(1.3); 
+}
+    </style>
+</head>
+<body>
+<div class="container">
+        <div class="avatar"></div>
+        <div class="nickname">dan1kcode</div>
+        <div class="Bio">Junior C++ Developer with core programming skills. Proficient in modern C++ (11/14), object-oriented programming, and basic memory management. Focused on writing clean, efficient code. Eager to grow through practical projects and challenges.</div>
+    <div class="contacts">
+    <a href="https://t.me/mrdan1kk">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/2048px-Telegram_2019_Logo.svg.png" class="tg_icon">
+    </a>
+    </div>
+</div>
+    
+    <video autoplay muted loop id="myVideo">
+        <source src="background-video/background.mp4" type="video/mp4" />
+    </video>
+
+</body>
+</html>
